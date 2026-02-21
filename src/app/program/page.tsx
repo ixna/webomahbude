@@ -22,6 +22,7 @@ import {
   Heart
 } from "lucide-react";
 import { useState } from "react";
+import { img } from "@/lib/utils";
 
 // Programs data with detailed information
 const programs = [
@@ -51,7 +52,7 @@ const programs = [
       { time: "16:00 - 17:00", activity: "Persiapan pulang" },
       { time: "17:00 - 18:00", activity: "Penjemputan" },
     ],
-    image: "/images/hero/hero-program.png",
+    image: img("/images/hero/hero-program.png"),
     color: "lavender",
   },
   {
@@ -80,7 +81,7 @@ const programs = [
       { time: "16:00 - 17:00", activity: "Bermain bebas" },
       { time: "17:00 - 18:00", activity: "Penjemputan" },
     ],
-    image: "/images/gallery/activity-art.png",
+    image: img("/images/gallery/activity-art.png"),
     color: "rose",
   },
   {
@@ -109,7 +110,7 @@ const programs = [
       { time: "16:00 - 17:00", activity: "Free play" },
       { time: "17:00 - 18:00", activity: "Penjemputan" },
     ],
-    image: "/images/gallery/activity-reading.png",
+    image: img("/images/gallery/activity-reading.png"),
     color: "lavender",
   },
   {
@@ -138,7 +139,7 @@ const programs = [
       { time: "16:00 - 17:00", activity: "Free play" },
       { time: "17:00 - 18:00", activity: "Penjemputan" },
     ],
-    image: "/images/facilities/classroom.png",
+    image: img("/images/facilities/classroom.png"),
     color: "rose",
   },
 ];
@@ -296,7 +297,7 @@ export default function Program() {
       <section className="relative min-h-[60vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero/hero-program.png"
+            src={img("/images/hero/hero-program.png")}
             alt="Program Omah Bude Daycare untuk berbagai usia"
             fill
             className="object-cover"
@@ -420,7 +421,7 @@ export default function Program() {
             <AnimatedSection direction="left">
               <div className="relative rounded-3xl overflow-hidden">
                 <Image
-                  src="/images/gallery/activity-meal.png"
+                  src={img("/images/gallery/activity-meal.png")}
                   alt="Anak-anak makan bersama di Omah Bude"
                   width={600}
                   height={400}

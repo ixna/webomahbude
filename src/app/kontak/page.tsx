@@ -18,6 +18,7 @@ import {
   Baby
 } from "lucide-react";
 import { useState } from "react";
+import { img } from "@/lib/utils";
 
 // Contact info
 const contactInfo = [
@@ -100,7 +101,7 @@ export default function Kontak() {
       <section className="relative min-h-[50vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/facilities/reception.png"
+            src={img("/images/facilities/reception.png")}
             alt="Ruang resepsi Omah Bude Daycare"
             fill
             className="object-cover"

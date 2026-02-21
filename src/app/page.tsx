@@ -7,6 +7,7 @@ import AnimatedSection, { StaggerContainer, StaggerItem } from "@/components/ui/
 import GlassCard from "@/components/ui/page/GlassCard";
 import PageHero from "@/components/ui/page/PageHero";
 import { Heart, Shield, BookOpen, Utensils, Star, ArrowRight, ChevronRight } from "lucide-react";
+import { img } from "@/lib/utils";
 
 // Features data
 const features = [
@@ -42,25 +43,25 @@ const programs = [
     name: "Bayi",
     age: "0-12 bulan",
     description: "Perawatan intensif dengan rasio pengasuh 1:2 untuk perhatian maksimal",
-    image: "/images/hero/hero-program.png",
+    image: img("/images/hero/hero-program.png"),
   },
   {
     name: "Batita",
     age: "1-2 tahun",
     description: "Stimulasi sensorik dan motorik melalui bermain dan eksplorasi",
-    image: "/images/gallery/activity-art.png",
+    image: img("/images/gallery/activity-art.png"),
   },
   {
     name: "Balita",
     age: "2-4 tahun",
     description: "Pengembangan kemandirian, sosialisasi, dan keterampilan dasar",
-    image: "/images/gallery/activity-reading.png",
+    image: img("/images/gallery/activity-reading.png"),
   },
   {
     name: "Pra-PAUD",
     age: "4-5 tahun",
     description: "Persiapan menuju pendidikan formal dengan kurikulum terstruktur",
-    image: "/images/facilities/classroom.png",
+    image: img("/images/facilities/classroom.png"),
   },
 ];
 
@@ -94,7 +95,7 @@ export default function Beranda() {
         {/* Background */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero/hero-main.png"
+            src={img("/images/hero/hero-main.png")}
             alt="Interior Omah Bude Daycare yang hangat dan nyaman"
             fill
             className="object-cover"
@@ -181,7 +182,7 @@ export default function Beranda() {
           className="hidden lg:block absolute right-8 top-1/2 -translate-y-1/2 w-[45%] h-[60%] rounded-3xl overflow-hidden shadow-2xl"
         >
           <Image
-            src="/images/hero/hero-children.png"
+            src={img("/images/hero/hero-children.png")}
             alt="Anak-anak bermain di Omah Bude Daycare"
             fill
             className="object-cover"
@@ -348,7 +349,7 @@ export default function Beranda() {
           <AnimatedSection>
             <div className="relative rounded-3xl overflow-hidden">
               <Image
-                src="/images/gallery/activity-outdoor.png"
+                src={img("/images/gallery/activity-outdoor.png")}
                 alt="Anak-anak bermain di luar ruangan Omah Bude"
                 fill
                 className="object-cover"

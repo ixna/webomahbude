@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn, img } from "@/lib/utils";
 
 const navLinks = [
   { href: "/", label: "Beranda" },
@@ -48,7 +48,7 @@ export default function Navigation() {
               className="relative w-12 h-12 md:w-14 md:h-14"
             >
               <Image
-                src="/images/logo.png"
+                src={img("/images/logo.png")}
                 alt="Omah Bude Daycare Logo"
                 fill
                 className="object-contain"

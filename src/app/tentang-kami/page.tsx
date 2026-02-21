@@ -6,6 +6,7 @@ import AnimatedSection, { StaggerContainer, StaggerItem } from "@/components/ui/
 import GlassCard from "@/components/ui/page/GlassCard";
 import { Target, Heart, Users, Award, Eye, Sparkles, X } from "lucide-react";
 import { useState } from "react";
+import { img } from "@/lib/utils";
 
 // Vision & Mission data
 const visiMisi = {
@@ -39,37 +40,37 @@ const facilities = [
   {
     name: "Ruang Kelas",
     description: "Ruang belajar yang nyaman dengan pencahayaan alami dan dekorasi ramah anak",
-    image: "/images/facilities/classroom.png",
+    image: img("/images/facilities/classroom.png"),
     span: "md:col-span-2",
   },
   {
     name: "Playground Outdoor",
     description: "Area bermain luar ruangan dengan permainan aman dan flooring khusus",
-    image: "/images/facilities/playground.png",
+    image: img("/images/facilities/playground.png"),
     span: "md:col-span-1",
   },
   {
     name: "Ruang Tidur",
     description: "Area tidur yang tenang dan nyaman dengan pengawasan ketat",
-    image: "/images/gallery/activity-nap.png",
+    image: img("/images/gallery/activity-nap.png"),
     span: "md:col-span-1",
   },
   {
     name: "Dapur & Kantin",
     description: "Dapur bersih untuk menyiapkan makanan sehat dan bergizi",
-    image: "/images/facilities/kitchen.png",
+    image: img("/images/facilities/kitchen.png"),
     span: "md:col-span-2",
   },
   {
     name: "Ruang Resepsi",
     description: "Area selamat datang yang hangat untuk orang tua dan tamu",
-    image: "/images/facilities/reception.png",
+    image: img("/images/facilities/reception.png"),
     span: "md:col-span-1",
   },
   {
     name: "Toilet Anak",
     description: "Fasilitas kebersihan dengan ukuran dan desain khusus untuk anak",
-    image: "/images/facilities/bathroom.png",
+    image: img("/images/facilities/bathroom.png"),
     span: "md:col-span-1",
   },
 ];
@@ -80,35 +81,35 @@ const team = [
     name: "Ibu Ratna Dewi, S.Pd.",
     role: "Kepala Daycare",
     description: "Berpengalaman 15+ tahun dalam pendidikan anak usia dini",
-    image: "/images/team/principal.png",
+    image: img("/images/team/principal.png"),
   },
   {
     name: "Ibu Sari Wulandari",
     role: "Guru Senior",
     description: "Spesialis stimulasi sensorik dan motorik halus",
-    image: "/images/team/teacher1.png",
+    image: img("/images/team/teacher1.png"),
   },
   {
     name: "Ibu Anisa Putri",
     role: "Guru Asisten",
     description: "Ahli dalam kreativitas dan seni untuk anak",
-    image: "/images/team/teacher2.png",
+    image: img("/images/team/teacher2.png"),
   },
   {
     name: "Ibu Dewi Anggraini, A.Md.",
     role: "Ahli Gizi",
     description: "Menyusun menu sehat dan bergizi untuk anak",
-    image: "/images/team/nutritionist.png",
+    image: img("/images/team/nutritionist.png"),
   },
 ];
 
 // Gallery activities
 const gallery = [
-  { image: "/images/gallery/activity-reading.png", alt: "Kegiatan membaca bersama", caption: "Membaca Bersama" },
-  { image: "/images/gallery/activity-art.png", alt: "Kegiatan seni dan kreativitas", caption: "Seni & Kreativitas" },
-  { image: "/images/gallery/activity-music.png", alt: "Kelas musik untuk anak", caption: "Kelas Musik" },
-  { image: "/images/gallery/activity-meal.png", alt: "Waktu makan bersama", caption: "Makan Bersama" },
-  { image: "/images/gallery/activity-outdoor.png", alt: "Bermain di luar ruangan", caption: "Outdoor Play" },
+  { image: img("/images/gallery/activity-reading.png"), alt: "Kegiatan membaca bersama", caption: "Membaca Bersama" },
+  { image: img("/images/gallery/activity-art.png"), alt: "Kegiatan seni dan kreativitas", caption: "Seni & Kreativitas" },
+  { image: img("/images/gallery/activity-music.png"), alt: "Kelas musik untuk anak", caption: "Kelas Musik" },
+  { image: img("/images/gallery/activity-meal.png"), alt: "Waktu makan bersama", caption: "Makan Bersama" },
+  { image: img("/images/gallery/activity-outdoor.png"), alt: "Bermain di luar ruangan", caption: "Outdoor Play" },
 ];
 
 // Lightbox component
@@ -175,7 +176,7 @@ export default function TentangKami() {
       <section className="relative min-h-[70vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero/hero-children.png"
+            src={img("/images/hero/hero-children.png")}
             alt="Anak-anak belajar dan bermain di Omah Bude Daycare"
             fill
             className="object-cover"
@@ -218,7 +219,7 @@ export default function TentangKami() {
                 <div className="absolute -top-6 -left-6 w-full h-full rounded-3xl bg-lavender-100" />
                 <div className="relative rounded-3xl overflow-hidden shadow-xl">
                   <Image
-                    src="/images/hero/hero-main.png"
+                    src={img("/images/hero/hero-main.png")}
                     alt="Interior Omah Bude Daycare"
                     width={600}
                     height={400}

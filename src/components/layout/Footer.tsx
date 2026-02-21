@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook } from "lucide-react";
+import { img } from "@/lib/utils";
 
 const footerLinks = {
   program: [
@@ -35,7 +36,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-3 mb-6">
               <div className="relative w-14 h-14">
                 <Image
-                  src="/images/logo.png"
+                  src={img("/images/logo.png")}
                   alt="Omah Bude Daycare Logo"
                   fill
                   className="object-contain"

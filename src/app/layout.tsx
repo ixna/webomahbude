@@ -31,8 +31,8 @@ export const metadata: Metadata = {
   keywords: ["daycare", "nursery", "pengasuhan anak", "pendidikan anak", "Omah Bude", "Jakarta daycare", "taman kanak-kanak"],
   authors: [{ name: "Omah Bude Daycare" }],
   icons: {
-    icon: "/images/logo.png",
-    apple: "/images/logo.png",
+    icon: "/webomahbude/images/logo.png",
+    apple: "/webomahbude/images/logo.png",
   },
   openGraph: {
     title: "Omah Bude Daycare",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/hero/hero-main.png",
+        url: "/webomahbude/images/hero/hero-main.png",
         width: 1344,
         height: 768,
         alt: "Omah Bude Daycare Interior",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Omah Bude Daycare",
     description: "Rumah Kedua untuk Tumbuh Kembang Si Kecil",
-    images: ["/images/hero/hero-main.png"],
+    images: ["/webomahbude/images/hero/hero-main.png"],
   },
 };
 
