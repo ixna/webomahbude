@@ -102,8 +102,9 @@ export default function Beranda() {
             priority
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/70 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-white/50" />
+          <div className="absolute inset-0 bg-white/40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-white/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-white via-white/30 to-white/40" />
         </div>
 
         {/* Decorative elements */}
