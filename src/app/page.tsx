@@ -112,8 +112,8 @@ export default function Beranda() {
         <div className="absolute bottom-32 left-20 w-96 h-96 bg-rose-300/30 rounded-full blur-3xl" />
 
         {/* Content */}
-        <div className="relative z-10 container-custom py-32 md:py-40">
-          <div className="max-w-2xl lg:max-w-[50%]">
+        <div className="relative z-10 max-w-[1536px] mx-auto px-6 sm:px-10 lg:px-16 py-32 md:py-40">
+          <div className="max-w-2xl lg:max-w-[45%]">
             <AnimatedSection>
               <span className="inline-block px-4 py-1.5 rounded-full bg-lavender-100 text-lavender-600 text-sm font-medium mb-6">
                 ✨ Terpercaya sejak 2018
