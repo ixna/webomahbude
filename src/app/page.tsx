@@ -113,7 +113,7 @@ export default function Beranda() {
 
         {/* Content */}
         <div className="relative z-10 container-custom py-32 md:py-40">
-          <div className="max-w-2xl">
+          <div className="max-w-2xl lg:max-w-[50%]">
             <AnimatedSection>
               <span className="inline-block px-4 py-1.5 rounded-full bg-lavender-100 text-lavender-600 text-sm font-medium mb-6">
                 ✨ Terpercaya sejak 2018
@@ -177,10 +177,10 @@ export default function Beranda() {
 
         {/* Floating image */}
         <motion.div
-          initial={{ opacity: 0, x: "calc(-50% + 50px)" }}
-          animate={{ opacity: 1, x: "-50%" }}
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.5, duration: 0.8 }}
-          className="hidden lg:block absolute left-1/2 top-0 bottom-0 my-auto w-[45%] h-[60%] rounded-3xl overflow-hidden shadow-2xl"
+          className="hidden lg:block absolute right-8 top-0 bottom-0 my-auto w-[45%] h-[60%] rounded-3xl overflow-hidden shadow-2xl"
         >
           <Image
             src={img("/images/hero/hero-children.png")}
