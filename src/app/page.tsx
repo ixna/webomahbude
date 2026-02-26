@@ -180,7 +180,7 @@ export default function Beranda() {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.5, duration: 0.8 }}
-          className="hidden lg:block absolute right-8 top-1/2 -translate-y-1/2 w-[45%] h-[60%] rounded-3xl overflow-hidden shadow-2xl"
+          className="hidden lg:block absolute right-8 top-[20%] bottom-[20%] w-[45%] rounded-3xl overflow-hidden shadow-2xl"
         >
           <Image
             src={img("/images/hero/hero-children.png")}
