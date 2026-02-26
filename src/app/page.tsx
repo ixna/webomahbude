@@ -177,10 +177,10 @@ export default function Beranda() {
 
         {/* Floating image */}
         <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: "calc(-50% + 50px)" }}
+          animate={{ opacity: 1, x: "-50%" }}
           transition={{ delay: 0.5, duration: 0.8 }}
-          className="hidden lg:block absolute right-8 top-[20%] bottom-[20%] w-[45%] rounded-3xl overflow-hidden shadow-2xl"
+          className="hidden lg:block absolute left-1/2 top-0 bottom-0 my-auto w-[45%] h-[60%] rounded-3xl overflow-hidden shadow-2xl"
         >
           <Image
             src={img("/images/hero/hero-children.png")}
